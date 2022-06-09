@@ -2,10 +2,16 @@
     "name": "elsa-lang",
     "displayName": "Elsa Syntax",
     "description": "Adds supports for the Elsa language",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.30.0"
+    "version": "1.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mistzzt/vscode-elsa-lang"
     },
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "activationEvents": ["onLanguage:elsa"],
+    "main": "extension.js",
     "categories": [
         "Programming Languages"
     ],
@@ -32,6 +38,6 @@
         ]
     },
     "devDependencies": {
-        "js-yaml": "^3.12.1"
+        "@types/vscode": "^1.66.0"
     }
 }

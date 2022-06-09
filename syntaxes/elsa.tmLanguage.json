@@ -124,7 +124,7 @@
 		"comments": {
 			"name": "comment.line.double-dash.elsa",
 			"begin": "--",
-			"end": "\n",
+			"end": "(?=\n)",
 			"patterns": []
 		}
 	},

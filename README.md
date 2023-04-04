@@ -1,12 +1,13 @@
-# elsa-lang README
+# Elsa
 
-Experimental syntax highlighter for the language used in [Elsa][elsa], a lambda calculus evaluator.
+Syntax highlighting and auto complete for UCSD's Elsa programming language.
 
-![Demo][demo]
+When autocompleting an alias, the "(expand)" version may be selected to replace
+it with what it aliases. This is particularly useful while performing definition 
+expansions.
 
 ## Release Notes
 
+- v1.0.2: Document the extension more extensively
+- v1.0.1: Support autocompletion of aliases
 - v0.0.1: Initial version released. It may doesn't work well due to my inexperience on syntax stuffs.
-
-[elsa]: <https://github.com/ucsd-progsys/elsa>
-[demo]: <https://github.com/mistzzt/vscode-elsa-lang/blob/master/resources/screenshot.gif?raw=true>

@@ -1,16 +1,17 @@
 {
     "name": "elsa-lang",
-    "displayName": "Elsa Syntax",
-    "description": "Adds supports for the Elsa language",
-    "version": "1.0.1",
+    "publisher": "akainth015",
+    "icon": "elsa.png",
+    "displayName": "Elsa",
+    "description": "Syntax highlighting and auto complete for UCSD's Elsa",
+    "version": "1.0.3",
     "repository": {
         "type": "git",
-        "url": "https://github.com/mistzzt/vscode-elsa-lang"
+        "url": "https://github.com/akainth015/vscode-elsa-lang"
     },
     "engines": {
-        "vscode": "^1.66.0"
+        "vscode": "^1.75.0"
     },
-    "activationEvents": ["onLanguage:elsa"],
     "main": "extension.js",
     "categories": [
         "Programming Languages"
@@ -23,6 +24,10 @@
                     "Elsa",
                     "elsa"
                 ],
+                "icon": {
+                    "dark": "resources/elsa_dark.png",
+                    "light": "resources/elsa_light.png"
+                },
                 "extensions": [
                     ".lc"
                 ],
@@ -38,6 +43,6 @@
         ]
     },
     "devDependencies": {
-        "@types/vscode": "^1.66.0"
+        "@types/vscode": "^1.75.0"
     }
 }

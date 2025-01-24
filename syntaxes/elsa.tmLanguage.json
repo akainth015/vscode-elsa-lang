@@ -122,10 +122,24 @@
 			]
 		},
 		"comments": {
-			"name": "comment.line.double-dash.elsa",
-			"begin": "--",
-			"end": "(?=\n)",
-			"patterns": []
+			"name": "comment.block.elsa",
+			"patterns": [
+				{
+					"name": "comment.line.double-dash.elsa",
+					"begin": "--",
+					"end": "(?=\n)"
+				},
+				{
+					"name": "comment.block-multi-line.elsa",
+					"begin": "\\{-",
+					"end": "-\\}",
+					"pattens": [
+						{
+							"include": "#comments"
+						}
+					]
+				}
+			]
 		}
 	},
 	"scopeName": "source.elsa"
